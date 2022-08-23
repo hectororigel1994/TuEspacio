@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TuEspacio, renta de cuartos de SPA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css' rel='stylesheet' type='text/css'>
+    <script src='https://code.jquery.com/jquery-1.12.2.min.js' type='text/javascript'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js" type="text/javascript"></script>
+     
+
+    <style>
+        .carousel {
+    position: relative;
+  }
+  .carousel-item img {
+    object-fit: cover;
+  }
+  #carousel-thumbs {
+    background: rgba(255,255,255,.3);
+    bottom: 0;
+    left: 0;
+    padding: 0 50px;
+    right: 0;
+  }
+  #carousel-thumbs img {
+    border: 5px solid transparent;
+    cursor: pointer;
+  }
+  #carousel-thumbs img:hover {
+    border-color: rgba(255,255,255,.3);
+  }
+  #carousel-thumbs .selected img {
+    border-color: #fff;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+  @media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+      border-width: 3px;
+    }
+  }
+  @media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+      position: absolute;
+    }
+  }
+  @media all and (max-width: 576px) {
+    .carousel-container #carousel-thumbs {
+      background: #ccccce;
+    }
+  }
+
+  .carousel-item {
+    transition: transform .6s ease-in-out;
+  }
+  
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 2.6s;
+  }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="">Terminos y condiciones</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">Whatsapp</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">Llamar</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-secondary"><span class="text-primary">Tu</span>ESPAcio</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
+                        <a href="https://www.luxarispa.com" class="nav-item nav-link">Spa</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                            </div>
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+   <div class="container">
+<div class=" row">
+    <div class="col-sm-6">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-slide-number="0">
+                <img src="img/1/1.jpeg" class="d-block w-100" alt="..." data-remote="img/1/1.jpeg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+              </div>
+              <div class="carousel-item" data-slide-number="1">
+                <img src="img/2/1.jpeg" class="d-block w-100" alt="..." data-remote="img/1/2.jpeg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+              </div>
+              <div class="carousel-item" data-slide-number="2">
+                <img src="img/2/2.jpeg" class="d-block w-100" alt="..." data-remote="img/2/1.jpeg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+              </div>
+              <div class="carousel-item" data-slide-number="3">
+                <img src="img/2/3.jpeg" class="d-block w-100" alt="..." data-remote="img/2/2.jpeg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+              </div>
+              <div class="carousel-item" data-slide-number="4">
+                <img src="img/2/4.jpeg" class="d-block w-100" alt="..." data-remote="img/3/1.jpeg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+              </div>
+              <div class="carousel-item" data-slide-number="5">
+                <img src="img/2/5.jpeg" class="d-block w-100" alt="..." data-remote="img/3/4.jpeg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+              </div>
+              <div class="carousel-item" data-slide-number="6">
+                <img src="img/2/6.jpeg" class="d-block w-100" alt="..." data-remote="img/4/6.jpeg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+              </div>
+             
+            </div>
+          </div>
+          
+          <!-- Carousel Navigation -->
+          <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row mx-0">
+                  <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                    <img src="img/1/1.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                    <img src="img/1/3.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                    <img src="img/2/1.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                    <img src="img/2/5.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                    <img src="img/3/1.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                    <img src="img/3/4.jpeg" class="img-fluid" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row mx-0">
+                  <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                    <img src="img/4/6.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="7">
+                    <img src="img/4/7.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="8">
+                    <img src="img/5/1.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="9">
+                    <img src="img/5/14.jpeg" class="img-fluid" alt="...">
+                  </div>
+                  <div id="carousel-selector-10" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="10">
+                      <img src="img/6/1.jpeg" class="img-fluid" alt="...">
+                    </div>
+                    <div id="carousel-selector-11" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="11">
+                      <img src="img/6/2.jpeg" class="img-fluid" alt="...">
+                    </div>
+                  <div class="col-2 px-1 py-2"></div>
+                  <div class="col-2 px-1 py-2"></div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          
+          </div> <!-- /col-sm-6 -->
+
+          <div class="col-sm-4">
+            <p>Cuarto economigo</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Reservar
+              </button>
+
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Terminos y condiciones</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Al reservar estas de acuerdo en aceptar nuestros terminos y condiciones <a href="document.docx">Terminos y condiciones</a>
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+    
+        </div><!-- col-4 -->
+          </div> <!-- /row -->
+      
+      
+   
+    </div> <!-- container -->
+
+    
+</div>
+   </div>
+   
+   <script>
+    $('#myCarousel').carousel({
+  interval: false
+});
+$('#carousel-thumbs').carousel({
+  interval: false
+});
+
+// handles the carousel thumbnails
+// https://stackoverflow.com/questions/25752187/bootstrap-carousel-with-thumbnails-multiple-carousel
+$('[id^=carousel-selector-]').click(function() {
+  var id_selector = $(this).attr('id');
+  var id = parseInt( id_selector.substr(id_selector.lastIndexOf('-') + 1) );
+  $('#myCarousel').carousel(id);
+});
+// Only display 3 items in nav on mobile.
+if ($(window).width() < 575) {
+  $('#carousel-thumbs .row div:nth-child(4)').each(function() {
+    var rowBoundary = $(this);
+    $('<div class="row mx-0">').insertAfter(rowBoundary.parent()).append(rowBoundary.nextAll().addBack());
+  });
+  $('#carousel-thumbs .carousel-item .row:nth-child(even)').each(function() {
+    var boundary = $(this);
+    $('<div class="carousel-item">').insertAfter(boundary.parent()).append(boundary.nextAll().addBack());
+  });
+}
+// Hide slide arrows if too few items.
+if ($('#carousel-thumbs .carousel-item').length < 2) {
+  $('#carousel-thumbs [class^=carousel-control-]').remove();
+  $('.machine-carousel-container #carousel-thumbs').css('padding','0 5px');
+}
+// when the carousel slides, auto update
+$('#myCarousel').on('slide.bs.carousel', function(e) {
+  var id = parseInt( $(e.relatedTarget).attr('data-slide-number') );
+  $('[id^=carousel-selector-]').removeClass('selected');
+  $('[id=carousel-selector-'+id+']').addClass('selected');
+});
+// when user swipes, go next or previous
+$('#myCarousel').swipe({
+  fallbackToMouseEvents: true,
+  swipeLeft: function(e) {
+    $('#myCarousel').carousel('next');
+  },
+  swipeRight: function(e) {
+    $('#myCarousel').carousel('prev');
+  },
+  allowPageScroll: 'vertical',
+  preventDefaultEvents: false,
+  threshold: 75
+});
+/*
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+*/
+
+$('#myCarousel .carousel-item img').on('click', function(e) {
+  var src = $(e.target).attr('data-remote');
+  if (src) $(this).ekkoLightbox();
+});
+</script>
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-0 pt-lg-4">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0 pl-lg-5">
+                    <h6 class="text-secondary text-uppercase font-weight-medium mb-3">¿Quiénes Somos?</h6>
+                    <h1 class="mb-4">Tu Espacio</h1>
+                    <h5 class="font-weight-medium font-italic mb-4">Rentamos espacios para masajistas y spa.</h5>
+                    <p class="mb-2">Contamos con las mejores instalaciones y la mejor atención, conoce todos nuestros beneficios.</p>
+                    <div class="row">
+                        <div class="col-sm-6 pt-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary mr-2"></i>
+                                <p class="text-secondary font-weight-medium m-0">Limpieza</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pt-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary mr-2"></i>
+                                <p class="text-secondary font-weight-medium m-0">El mejor precio</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pt-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary mr-2"></i>
+                                <p class="text-secondary font-weight-medium m-0">El mejor estilo</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pt-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check text-primary mr-2"></i>
+                                <p class="text-secondary font-weight-medium m-0">Satisfacción garantizada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    
+
+
+  
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 pt-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href=""><h1 class="text-secondary mb-3"><span class="text-white">Tu</span>ESPacio</h1></a>
+                <p>Contamos con las mejores instalaciones, para que puedas comenzar con tu negocio.</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white mb-4">Contactanos</h4>
+                <p>Nos encantará recibirte, contactanos en cualquier momento</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white mb-4">Links </h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Precios</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contactanos</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white mb-4">Newsletter</h4>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control border-0" placeholder="Tu nombre" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control border-0" placeholder="E-mail" required="required" />
+                    </div>
+                    <div>
+                        <button class="btn btn-lg btn-secondary btn-block border-0" type="submit">Envíar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-4 px-sm-3 px-md-5">
+        <p class="m-0 text-center text-white">
+            &copy; <a class="text-white font-weight-medium" href="#">Tu Espacio</a>. Todos los derechos reservados 
+        </p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
